@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRApi", "SignalRApi\SignalRApi.csproj", "{1D791B49-A6B1-471D-BD91-4F4C35DF18B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SginalRWebUI", "SginalRWebUI\SginalRWebUI.csproj", "{C7AE67D5-50CD-41EF-BBA7-72F056925A54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRWebUI", "SginalRWebUI\SignalRWebUI.csproj", "{C7AE67D5-50CD-41EF-BBA7-72F056925A54}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.EntityLayer", "SignalR.EntityLayer\SignalR.EntityLayer.csproj", "{8AD01E9C-AFFF-48C6-9EB2-1E3A7D0364AA}"
 EndProject
