@@ -60,7 +60,6 @@ namespace SignalRWebUI.Controllers
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
-
             }
             return View();  
         }
