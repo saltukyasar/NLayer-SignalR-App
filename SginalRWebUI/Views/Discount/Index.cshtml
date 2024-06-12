@@ -1,0 +1,61 @@
+﻿@model List<ResultDiscountDto>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/AdminLayout/Index.cshtml";
+	int count = 0;
+}
+
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Daily disocunt Operations</h4>
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">List of Discounts</div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Discounted Products. For template choose<strong>2 pieces</strong> discounted Product.
+						</div>
+						<table class="table mt-3">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Product</th>
+									<th scope="col">Percent of Discount</th>
+									<th scope="col">Status</th>
+									<th scope="col">Delete</th>
+									<th scope="col">Update</th>
+									<th scope="col">Active</th>
+									<th scope="col">Passive</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									count++;
+									<tr>
+										<th>@count</th>
+										<td>@item.Title</td>
+										<td>@item.Amount</td>
+										<td>@item.Status</td>
+										<td><a href="/Discount/DeleteDiscount/@item.DiscountID" class="btn btn-outline-danger">Delete</a></td>
+										<td><a href="/Discount/UpdateDiscount/@item.DiscountID" class="btn btn-outline-success">Update</a></td>
+										<td><a href="/Discount/ChangeStatusToTrue/@item.DiscountID" class="btn btn-outline-warning">Active</a></td>
+										<td><a href="/Discount/ChangeStatusToFalse/@item.DiscountID" class="btn btn-outline-dark">Passive</a></td>
+
+									</tr>
+								}
+							</tbody>
+						</table>
+						<a href="/Discount/CreateDiscount/" class="btn btn-outline-primary">New Discount</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
