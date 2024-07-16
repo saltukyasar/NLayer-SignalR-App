@@ -1,0 +1,4 @@
+﻿--categoryCount
+--ProductCount
+--Active Category count
+--passive Category count
