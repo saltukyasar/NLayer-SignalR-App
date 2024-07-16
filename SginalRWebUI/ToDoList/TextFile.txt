@@ -2,3 +2,6 @@
 --ProductCount
 --Active Category count
 --passive Category count
+
+--product count1 According to category name
+--product count2 according to category name
