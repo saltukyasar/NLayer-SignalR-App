@@ -5,3 +5,15 @@
 
 --product count1 According to category name
 --product count2 according to category name
+
+--ortalama fiyat
+--en yüksek ürün fiyat
+--en düsük ürün fiyati
+--ortalama hamburger fiyati
+
+--toplam siparis sayisi
+--aktif siparis
+--son sipparis tutari
+--kasadaki tutar
+--bugünkü kazanc
+--masa sayisi
